@@ -1,9 +1,11 @@
 import React from 'react';
 
+
 const ListEntry = (props) => {
     return (
-        <div className="item">
-        </div>
+        <li className="item" onClick={() => props.deleteItem(props.index)} >
+            {props.todo}
+        </li>
     );
 };
 
